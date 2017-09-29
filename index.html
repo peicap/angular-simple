@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html>
+    <head>
+        <script src="./node_modules/zone.js/dist/zone.js"></script>
+        <script src="./node_modules/reflect-metadata/Reflect.js"></script>
+        <script src="./node_modules/systemjs/dist/system.src.js"></script>
+        <script src="./systemjs.config.js"></script>
+        <script>
+            System.import('./dist/main').catch ( e => console.log( e ) );
+        </script>
+    </head>
+    <style>
+        body { background: #2d2d2d; color: white; }
+    </style>
+    <body>
+        index.html 
+        <br>
+        <app-component>Loading..</app-component>
+    </body>
 </html>
